@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Face Mesh Demos</title>
+
+	<!-- Robots start reading here -->
+    <meta name="title" content="Face Mesh Demos by Andy Kong">
+	<meta name="description" content="Demonstration of machine learning models in the web, made for a Medium post. Examples of photoplethysmography, face tracking, Snapchat filters">
+	<meta name="keywords" content="machine learning, mediapipe, face mesh, tensorflow, tensorflow javascript, ppg, photoplethysmography, medium, github, code, javascript,">
+	<meta name="robots" content="index, follow">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="language" content="English">
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+	<style>html {font-family: 'Work Sans', sans-serif;} hr{margin-left:10em;margin-right:10em;height:2px;background: black;} a{text-decoration: none;}</style>	
+</head>
+<body style="background-color:aliceblue; padding:0em 2em 0em 2em;">
+	<h1 style="text-align:center; font-size:3em; font-weight: 300; margin-bottom:.2em;">Face Mesh Demos</h1>
+	<hr style="">
+
+	<h2 >Hello! This is the access point for three web demos of Media Pipe's <a href="https://google.github.io/mediapipe/solutions/face_mesh.html" target="_blank">Face Mesh</a>, a cross-platform face tracking model that works entirely in the browser using Javascript. Each demo is explained in detail in the Medium post <a href="" target="_blank">here</a>.</h2>
+
+	<img style="display: block; margin-left: auto;margin-right: auto; width:60vw; height:auto" src="face.png">
+
+	<p> Note: To use the demos, you'll need to enable your camera. These demos should work on both mobile and desktop browsers, but will run better on the desktop. IF USING AN iPHONE, TURN OFF WebGL2.0, it kills mobile performance in Safari.</p>
+	<hr>
+	<h1 style="font-size: 3em;margin-top:0px;">Demos:</h1>
+	<ul >
+		<li style="font-size: 1.2em;"><a href="dotsonly">Dotted Landmarks</a> | Basic example showing where the detected landmarks are on the face.</li>
+
+		<br>
+		<li style="font-size: 1.2em;"><a href="labeleddots">Labeled Landmarks</a> | Same as above example, but the landmarks have their indices written beside them.</li>
+
+		<br>
+		<li style="font-size: 1.2em;"><a href="eyeswap">Snapchat Filter</a> | Scaling, flipping, and other image manipulations in the browser using Tensorflow.JS</li>
+
+		<br>
+		<li style="font-size: 1.2em;"><a href="PPG">Webcam Heartrate Monitor (Photoplethsymography)</a> | Averaging your camera's pixels to calculate heartrate from your face flushing with every beat. Works best with lower screen brightness.</li>
+	</ul>
+</body>
+</html>
+

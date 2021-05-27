@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    	<!-- Robots start reading here -->
+    <meta name="title" content="Face Mesh Demos by Andy Kong">
+	<meta name="description" content="Demonstration of machine learning models in the web, made for a Medium post. Examples of photoplethysmography, face tracking, Snapchat filters">
+	<meta name="keywords" content="machine learning, mediapipe, face mesh, tensorflow, tensorflow javascript, ppg, photoplethysmography, medium, github, code, javascript,">
+	<meta name="robots" content="index, follow">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="language" content="English">
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+	<style>html {font-family: 'Work Sans', sans-serif;} hr{margin-left:10em;margin-right:10em;height:2px;background: black;}</style>	
+
+    <title>Webcam Heartrate Monitor | Face Mesh</title>
+</head>
+<body style="background-color:aliceblue;">
+	
+
+	    <video autoplay muted playsinline hidden id="video" style=" width: auto; height: auto;">
+	    </video>
+	    <a href="../" style="text-decoration: none;">Home</a>
+	    <div id="cameraFPS"></div>
+	    <div id="HR_indicator">Heartrate here: </div>
+
+	    <div style="display: inline-block;width:320" id="graphdiv"></div>
+	    <div style="display: inline-block;width:320" id="graphdiv2"></div>
+	            		
+	    <canvas id="facecanvas"></canvas>
+
+
+</body>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/facemesh"></script>
+
+	<script src="fft.js"></script>
+	<script src="dygraph.min.js"></script>
+	<script src="code.js"></script>
+
+	<script>
+	    main();
+	</script>
+
+</head>
+</html>
+
